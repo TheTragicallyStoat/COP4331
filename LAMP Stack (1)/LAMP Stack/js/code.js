@@ -57,6 +57,10 @@ function doLogin()
 	}
 
 }
+function goToRegister() {
+    window.location.href = "Register.php";
+}
+
 
 function saveCookie()
 {
