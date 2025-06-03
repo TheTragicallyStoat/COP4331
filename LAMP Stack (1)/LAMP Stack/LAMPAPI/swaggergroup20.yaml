@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   description: API Documentation for COP4331 Web App
   version: 1.0.0
-  title: Talk Trails
+  title: Coders In The Wild
   contact:
     email: co459798@ucf.edu
   license:
