@@ -2,14 +2,14 @@ swagger: '2.0'
 info:
   description: API Documentation for COP4331 Web App
   version: 1.0.0
-  title: Magistic Contacter
+  title: Talk Trails
   contact:
     email: co459798@ucf.edu
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
 paths:
-  /addContact:
+  /AddContacts.php:
     post:
       summary: Add a new contact
       parameters:
@@ -23,7 +23,7 @@ paths:
           description: Success or error message
           schema:
             $ref: '#/definitions/ErrorResponse'
-  /deleteContact:
+  /DeleteContacts.php:
     delete:
       summary: Delete a contact
       description: Deletes a contact based on (FirstName + LastName) OR Phone OR Email, matched with userId.
@@ -38,7 +38,7 @@ paths:
           description: Success or error message
           schema:
             $ref: '#/definitions/ErrorResponse'
-  /login:
+  /Login.php:
     post:
       summary: User login
       description: Authenticates a user and returns user information.
@@ -53,7 +53,7 @@ paths:
           description: User info or error message
           schema:
             $ref: '#/definitions/LoginResponse'
-  /register:
+  /Register.php:
     post:
       summary: Register a new user
       description: Creates a new user if the login (username) is not already taken.
@@ -68,7 +68,7 @@ paths:
           description: Success or error message
           schema:
             $ref: '#/definitions/RegisterResponse'
-  /searchContacts:
+  /SearchContacts.php:
     post:
       summary: Search user's contacts
       description: Searches contacts by name, phone, or email for a given user.
